@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belajar Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Latar belakang matrix emas -->
+  <canvas id="matrix-bg"></canvas>
+
+  <div class="container">
+    <header>
+      <h1>Belajar Web Dasar</h1>
+      <p>Website Ini Dikembangkan Oleh hmmodz</p>
+    </header>
+
+    <div class="main-layout">
+      <div class="tutorial" id="tutorial-content"></div>
+
+      <div class="editor-area">
+        <div class="panel">
+          <div class="panel-header">✨ Editor HTML/CSS/JS</div>
+          <div class="panel-body">
+            <textarea id="code-editor" spellcheck="false" placeholder="Ketik kode HTML/CSS/JS kamu di sini..."></textarea>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">👁️ Preview Langsung</div>
+          <div class="panel-body">
+            <iframe id="preview-frame" sandbox="allow-scripts allow-same-origin allow-modals" srcdoc=""></iframe>
+          </div>
+        </div>
+
+        <div class="error-box">
+          <div class="error-title">👁️‍🗨️ Status & Error</div>
+          <div class="error-content" id="error-output">Menunggu input..</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Website ini dikembangkan oleh <code>hmmodz team</code>
+    </footer>
+  </div>
+
+  <script src="matrix.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
